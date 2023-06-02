@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="styles.css" /> 
+    
+  </head>
+
+  <body> 
+    <script src="script.js"></script>
+    <div class="calculator">
+      <div class="header">
+        <p class="brand">Casio</p>
+        <span
+          ><p class="darkModeTxt">Dark Mode:</p>
+          <input id="darkMode" type="checkbox"
+        /></span>
+      </div>
+      <div class="screen">
+        <p id="screentext">0</p>
+      </div>
+
+      <div class="buttons-grid">
+        <button class="operationbtn" onClick="click('+')">+</button>
+        <button class="operationbtn" onClick="click('-')">-</button>
+        <button class="operationbtn" onClick="click('*')">x</button>
+        <button class="operationbtn" onClick="click('/')">/</button>
+
+        <button class="numberBtn"onClick="click(7)">7</button>
+        <button class="numberBtn"onClick="click(8)">8</button>
+        <button class="numberBtn"onClick="click(9)">9</button>
+
+        <button class="numberBtn"onClick="click(7)">4</button>
+        <button class="numberBtn"onClick="click(7)">5</button>
+        <button class="numberBtn"onClick="click(7)">6</button>
+
+        <button class="numberBtn"onClick="click(1)">1</button>
+        <button class="numberBtn"onClick="click(2)">2</button>
+        <button class="numberBtn"onClick="click(3)">3</button>
+
+        <button class="numberBtn"onClick="click('.')">.</button>
+        <button class="numberBtn"onClick="click(0)">0</button>
+        <button class="numberBtn clearbtn" on Click="clearScreen()">
+          AC
+        </button>
+
+        <button id="equal" class="operationbtn equal-sign"onClick="click(7)">=</button>
+        <button class="operationbtn prev">Previous</button>
+        <button class="operationbtn next">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
